@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Animal Trivia</title>
+</head>
+
+<body onload="submitQuiz();">
+    <div class="back">
+        <div class= "title container">
+            <div class='row'>
+                <div class='col-sm-12'> 
+                    <h1>Animal Trivia</h1>
+                    <h2 class="quizHeader">Take a Quiz!</h2>
+                </div>
+            </div>
+        </div>
+        <div class= "table container">
+            <div class='row'>
+                <div class='col-sm-12'> 
+                    <table style="width:583px">
+                        <tr>
+                        <td>
+                            <div>
+                                <p class="question">1. What is the world's largest fish? </p>
+                    
+                                <input class="answer" type="radio" name="q1" value="1">
+                                <label id="correctString1">Whale Shark</label>
+                                <br>
+                                <input class="answer" type="radio" name="q1" value="0">
+                                <label>Killer Shark</label>
+                                <br>
+                                <input class="answer" type="radio" name="q1" value="0">
+                                <label>Blue Whale</label>
+                                <br>
+                                <input class="answer" type="radio" name="q1" value="0">
+                                <label>Great White Shark</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p class="question">2. Which of these mammals can NOT jump? </p>
+                    
+                                <input class="answer" type="radio" name="q2" value="0">
+                                <label>Polar Bear</label>
+                                <br>
+                                <input class="answer" type="radio" name="q2" value="1">
+                                <label id="correctString2">Sloths</label>
+                                <br>
+                                <input class="answer" type="radio" name="q2" value="0">
+                                <label>Zebra</label>
+                                <br>
+                                <input class="answer" type="radio" name="q2" value="0">
+                                <label>Giraffe</label>
+                            </div>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            <div>
+                                <p class="question">3. How many stomachs does a cow have?</p>
+                    
+                                <input class="answer" type="radio" name="q3" value="0">
+                                <label>6</label>
+                                <br>
+                                <input class="answer" type="radio" name="q3" value="1">
+                                <label id="correctString3">4</label>
+                                <br>
+                                <input class="answer" type="radio" name="q3" value="0">
+                                <label>2</label>
+                                <br>
+                                <input class="answer" type="radio" name="q3" value="0">
+                                <label>1</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <p class="question">4. What is the largest carnivore in the world?</p>
+                    
+                                <input class="answer" type="radio" name="q4" value="0">
+                                <label>Lion</label>
+                                <br>
+                                <input class="answer" type="radio" name="q4" value="1">
+                                <label id="correctString4">Polar Bear</label>
+                                <br>
+                                <input class="answer" type="radio" name="q4" value="0">
+                                <label>Siberan Tiger</label>
+                                <br>
+                                <input class="answer" type="radio" name="q4" value="0">
+                                <label>BobCat</label>
+                            </div>
+                        </td>
+                        </tr>
+                        <td>
+                            <div>
+                                <p class="question">5. What is the branch of biology called that deals with the study of mammals? </p>
+
+                            <input class="answer" type="radio" name="q5" value="0">
+                            <label>Anthropology</label>
+                            <br>
+                            <input class="answer" type="radio" name="q5" value="1">
+                            <label id="correctString5">Mammalogy</label>
+                            <br>
+                            <input class="answer" type="radio" name="q5" value="0">
+                            <label>Zoology</label>
+                            <br>
+                            <input class="answer" type="radio" name="q5" value="0">
+                            <label>funology</label>
+                            </div>
+                        </td>
+                    </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class= "submitter container">
+             <div class='row'>
+                <div class='col-sm-12'>
+                    <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+                        type="submit" value="Submit" />
+                </div>
+             </div>
+        </div>
+        <div class= "answer container">
+            <div class='row'>
+                <div class='col-sm-12'> 
+                    <div class="quizAnswers" id="correctAnswer1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class= "correct container">
+            <div class='row'>
+                <div class='col-sm-12'> 
+                    <div class="quizAnswers" id="correctAnswer2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class= "school container">
+            <div class='row'>
+                <div class='col-sm-12'> 
+                    <div class="quizAnswers" id="correctAnswer3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class= "puzzle container">
+            <div class='row'>
+                <div class='col-sm-12'> 
+                    <div class="quizAnswers" id="correctAnswer4">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class= "false container">
+            <div class='row'>
+                <div class='col-sm-12'> 
+                    <div class="quizAnswers" id="correctAnswer5">
+                    </div>
+                </div>
+            </div>
+        <div>
+        <div class= "dome container">
+            <div class='row'>
+                <div class='col-sm-12'> 
+                    <h2 class="quizScore" id="userScore"></h2>
+                </div>
+            </div>
+        </div>
+   </div>
+    <script>
+
+        function submitQuiz() {
+                console.log('submitted');
+
+            
+                function answerScore (qName) {
+                    var radiosNo = document.getElementsByName(qName);
+
+                    for (var i = 0, length = radiosNo.length; i < length; i++) {
+                        if (radiosNo[i].checked) {
+                
+                            var answerValue = Number(radiosNo[i].value);
+                        }
+                    }
+            
+                    if (isNaN(answerValue)) {
+                        answerValue = 0;
+                    }
+                    return answerValue;
+                }
+
+        
+                var calcScore = (answerScore('q1') + answerScore('q2') + answerScore('q3') + answerScore('q4') + answerScore('q5'));
+                console.log("CalcScore: " + calcScore); 
+
+        
+                function correctAnswer (correctStringNo, qNumber) {
+                    console.log("qNumber: " + qNumber);  
+                    return ("The correct answer for question #" + qNumber + ": &nbsp;<strong>" +
+                        (document.getElementById(correctStringNo).innerHTML) + "</strong>");
+                    }
+
+                if (answerScore('q1') === 0) {
+                    document.getElementById('correctAnswer1').innerHTML = correctAnswer('correctString1', 1);
+                }
+                if (answerScore('q2') === 0) {
+                    document.getElementById('correctAnswer2').innerHTML = correctAnswer('correctString2', 2);
+                }
+                if (answerScore('q3') === 0) {
+                    document.getElementById('correctAnswer3').innerHTML = correctAnswer('correctString3', 3);
+                }
+                if (answerScore('q4') === 0) {
+                    document.getElementById('correctAnswer4').innerHTML = correctAnswer('correctString4', 4);
+                }
+                if (answerScore('q5') === 0) {
+                    document.getElementById('correctAnswer5').innerHTML = correctAnswer('correctString5', 5);
+                }
+
+                var questionCountArray = document.getElementsByClassName('question');
+
+                var questionCounter = 0;
+                for (var i = 0; i < questionCountArray.length; i++) {
+                    questionCounter++;
+                }
+
+
+                var showScore = "Your Score: " + calcScore +"/" + questionCounter;
+            
+                if (calcScore === questionCounter) {
+                    showScore = showScore + "&nbsp; <strong>Perfect Score!</strong>"
+                };
+                document.getElementById('userScore').innerHTML = showScore;
+            }
+
+        $(document).ready(function() {
+
+            $('#submitButton').click(function() {
+                $(this).addClass('hide');
+            });
+
+        });
+
+    </script> 
+
+   
+
+</body>
+</html>
