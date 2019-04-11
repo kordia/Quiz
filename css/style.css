@@ -1,11 +1,30 @@
+
 .title{
     color:black;
-   
+    text-align: center;
 }
+
 .back{
-    background-color: rgb(43, 189, 226);
+    background-color:  rgb(127, 253, 8);
 }
+
 .table{
     background-color: rgb(127, 253, 8);
-    margin-left: 40px;
+    margin-left: 100px;
+}
+
+.picture img{
+    margin-bottom: 20px;
+}
+
+.upper{
+    margin-left: 30px;
+}
+
+.top{
+    margin-left: 30px;
+}
+
+.right{
+    margin-left: 50px;
 }
