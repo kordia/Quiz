@@ -7,15 +7,16 @@
 .back{
     background-color:  rgb(127, 253, 8);
 }
-
+.move{
+    background-color:  rgb(127, 253, 8);
+}
 .table{
-    background-color: rgb(127, 253, 8);
     margin-left: 100px;
+    padding-left: 215px;
 }
 .picture{
     background-color: rgb(127, 253, 8);
     text-align: center;
-
 }
 .picture img{
     background-color: rgb(127, 253, 8);
@@ -38,4 +39,10 @@
 
 .right{
     margin-left: 50px;
+}
+.done{
+    padding-left: 11%;
+}
+.submitter{
+    margin-bottom: 20px;
 }
